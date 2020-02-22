@@ -8,6 +8,19 @@ export class Stack<T> {
     this.first = null;
     this.length = 0;
   }
+  //Ex_1_3_12
+  static copy(source: Stack<string>): Stack<string> {
+    //迭代器实现是从栈顶到栈底，所以第一次push的是倒序的，需要倒到另一个栈才是正确顺序
+    const targetRev = new Stack<string>();
+    const target = new Stack<string>();
+    for (let item of source) {
+      targetRev.push(item);
+    }
+    while (!targetRev.isEmpty()) {
+      target.push(targetRev.pop()!);
+    }
+    return target;
+  }
   push(value: T) {
     let top = new Node<T>(value, this.first);
     this.first = top;
@@ -28,6 +41,9 @@ export class Stack<T> {
   }
   size(): number {
     return this.length;
+  }
+  peek(): T | undefined {
+    return this.first ? this.first.item : undefined;
   }
   private [Symbol.iterator]() {
     let theFirst = this.first;
@@ -53,12 +69,12 @@ export class Stack<T> {
 }
 
 //test
-let a = new Stack<string>();
+// let a = new Stack<string>();
 
-a.push('first');
-a.push('second');
-a.push('third');
+// a.push('first');
+// a.push('second');
+// a.push('third');
 
-for (let s of a) {
-  console.log(s);
-}
+// for (let s of a) {
+//   console.log(s);
+// }
