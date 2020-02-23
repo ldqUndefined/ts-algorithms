@@ -63,10 +63,10 @@ export class Queue<T> {
 }
 
 //test
-let a = new Queue<string>();
-a.enqueue('first');
-a.enqueue('second');
-a.enqueue('third');
-for (let s of a) {
-  console.log(s);
-}
+// let a = new Queue<string>();
+// a.enqueue('first');
+// a.enqueue('second');
+// a.enqueue('third');
+// for (let s of a) {
+//   console.log(s);
+// }
