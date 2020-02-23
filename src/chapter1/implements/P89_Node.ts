@@ -29,3 +29,38 @@ export class Node<T> {
     };
   }
 }
+
+export class DoubleNode<T> {
+  item: T;
+  prev: DoubleNode<T> | null;
+  next: DoubleNode<T> | null;
+  constructor(
+    value: T,
+    prev: DoubleNode<T> | null = null,
+    next: DoubleNode<T> | null = null
+  ) {
+    this.item = value;
+    this.prev = prev;
+    this.next = next;
+  }
+  private [Symbol.iterator]() {
+    let iterator = new DoubleNode<T>(null as any, null, this);
+    return {
+      next(): IteratorResult<T> {
+        if (iterator.next) {
+          let value = iterator.next.item;
+          iterator = iterator.next;
+          return {
+            value,
+            done: false
+          };
+        } else {
+          return {
+            value: undefined,
+            done: true
+          };
+        }
+      }
+    };
+  }
+}
