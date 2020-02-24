@@ -1,5 +1,5 @@
-import { DoubleNode } from '../implements/P89_Node';
-import { IteratorResult } from '../../Util';
+import { DoubleNode } from '../../implements/P89_Node';
+import { IteratorResult } from '../../../Util';
 export class Deque<T> {
   private length: number;
   private left: DoubleNode<T> | null;

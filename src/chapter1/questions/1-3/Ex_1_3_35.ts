@@ -1,4 +1,4 @@
-import { shuffle } from '../../Util';
+import { shuffle } from '../../../Util';
 export class RandomQueue<T> {
   private arr: T[];
   constructor() {

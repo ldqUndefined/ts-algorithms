@@ -1,4 +1,4 @@
-import { Node } from '../implements/P89_Node';
+import { Node } from '../../implements/P89_Node';
 
 //靠每次写这个翻转节点不看答案都想不起来怎么写我佛了
 export const reverse = <T>(first: Node<T> | null): Node<T> | null => {

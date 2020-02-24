@@ -1,4 +1,4 @@
-import { Queue } from '../implements/P95_Queue';
+import { Queue } from '../../implements/P95_Queue';
 
 const josephus = (n: number, m: number) => {
   const queue = new Queue<Number>();

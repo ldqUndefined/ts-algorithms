@@ -1,4 +1,4 @@
-import { Node } from '../implements/P89_Node';
+import { Node } from '../../implements/P89_Node';
 
 export class GeneralizedQueue<T> {
   private head: Node<T> | null;

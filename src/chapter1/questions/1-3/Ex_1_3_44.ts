@@ -1,5 +1,5 @@
-import { Stack } from '../implements/P94_Stack';
-import { IteratorResult } from '../../Util';
+import { Stack } from '../../implements/P94_Stack';
+import { IteratorResult } from '../../../Util';
 export class Buffer {
   private cursorLeft: Stack<string>;
   private cursorRight: Stack<string>;

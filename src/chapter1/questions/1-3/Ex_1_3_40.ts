@@ -1,4 +1,4 @@
-import { Node } from '../implements/P89_Node';
+import { Node } from '../../implements/P89_Node';
 export const moveToFront = (s: string) => {
   if (!s) {
     return null;

@@ -1,4 +1,4 @@
-import { IteratorResult, shuffle } from '../../Util';
+import { IteratorResult, shuffle } from '../../../Util';
 //用数组实现好了，方便点，他的难点在于实现随机
 export class RandomBag<T> {
   private arr: T[];

@@ -1,4 +1,4 @@
-import { Stack } from '../implements/P94_Stack';
+import { Stack } from '../../implements/P94_Stack';
 
 const Parentheses = (s: string): boolean => {
   const stack = new Stack<string>();

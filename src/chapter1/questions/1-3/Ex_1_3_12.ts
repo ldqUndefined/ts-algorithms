@@ -1,4 +1,4 @@
-import { Stack } from '../implements/P94_Stack';
+import { Stack } from '../../implements/P94_Stack';
 
 let a = new Stack<string>();
 

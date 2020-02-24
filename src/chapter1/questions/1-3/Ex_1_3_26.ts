@@ -1,4 +1,4 @@
-import { Node } from '../implements/P89_Node';
+import { Node } from '../../implements/P89_Node';
 
 export const remove = <T>(first: Node<T> | null, key: T): Node<T> | null => {
   //声明一个虚拟的头结点可以少判断很多关于头部是否存在问题，看别人博客学来的

@@ -1,4 +1,4 @@
-import { Node } from '../implements/P89_Node';
+import { Node } from '../../implements/P89_Node';
 //只能使用一个Node结点实例
 export class Queue<T> {
   private last: Node<T> | null;

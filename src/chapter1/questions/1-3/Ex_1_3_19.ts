@@ -1,4 +1,4 @@
-import { Node } from '../implements/P89_Node';
+import { Node } from '../../implements/P89_Node';
 
 export const deleteTail = <T>(first: Node<T> | null): Node<T> | null => {
   if (!first) {

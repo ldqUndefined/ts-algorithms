@@ -1,4 +1,4 @@
-import { Node } from '../implements/P89_Node';
+import { Node } from '../../implements/P89_Node';
 
 export const max = (first: Node<number> | null): number => {
   if (!first) {

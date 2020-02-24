@@ -1,4 +1,4 @@
-import { Stack } from '../implements/P94_Stack';
+import { Stack } from '../../implements/P94_Stack';
 
 //两个栈实现，最差情况下发生在出栈为空时，需要2N次栈操作，N为队列长度
 export class QueueWithTwoStack<T> {
