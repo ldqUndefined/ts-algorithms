@@ -17,3 +17,4 @@ export const selectionSort = (arr: number[]) => {
     [arr[min], arr[i]] = [arr[i], arr[min]];
   }
 };
+//
